@@ -1,0 +1,27 @@
+/* ==============================
+   Footer
+============================== */
+
+footer {
+  padding: 24px 0;
+
+  color: var(--ink-soft);
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/* ==============================
+   Accessibility
+   Reduced motion preference
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}

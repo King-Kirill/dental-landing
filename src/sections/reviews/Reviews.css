@@ -1,0 +1,82 @@
+/* ==============================
+   Reviews Section
+============================== */
+
+.reviews .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 32px;
+}
+
+
+/* ==============================
+   Review Card
+============================== */
+
+.rev {
+  margin: 0;
+  padding: 28px 0 0;
+
+  border-top: 1.5px solid var(--aqua);
+}
+
+
+/* Staggered Layout */
+
+.rev:nth-child(even) {
+  margin-top: 36px;
+}
+
+
+/* ==============================
+   Star Rating
+============================== */
+
+.stars {
+  margin-bottom: 10px;
+
+  color: var(--star);
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+
+/* ==============================
+   Review Text
+============================== */
+
+.rev blockquote {
+  margin: 0 0 14px;
+
+  font-size: 18px;
+}
+
+
+/* ==============================
+   Reviewer Information
+============================== */
+
+.rev figcaption {
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.rev figcaption b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+
+/* ==============================
+   Responsive
+============================== */
+
+@media (max-width: 760px) {
+  .reviews .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rev:nth-child(even) {
+    margin-top: 0;
+  }
+}

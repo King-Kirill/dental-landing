@@ -1,0 +1,98 @@
+/* ==============================
+   Header
+============================== */
+
+.top {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(248, 251, 250, 0.92);
+  backdrop-filter: blur(8px);
+
+  border-bottom: 1px solid var(--line);
+}
+
+
+/* ==============================
+   Header container
+============================== */
+
+.top .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 68px;
+  gap: 16px;
+}
+
+
+/* ==============================
+   Logo
+============================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.logo i {
+  display: inline-block;
+
+  width: 26px;
+  height: 26px;
+
+  border-radius: 50% 50% 50% 8px;
+  background: var(--aqua);
+}
+
+
+/* ==============================
+   Navigation
+============================== */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav a {
+  color: var(--ink-soft);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--ink);
+}
+
+
+/* ==============================
+   Telephone link
+============================== */
+
+.tel {
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+
+/* ==============================
+   Responsive
+============================== */
+
+@media (max-width: 820px) {
+  .nav a:not(.tel) {
+    display: none;
+  }
+}

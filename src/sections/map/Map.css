@@ -1,0 +1,113 @@
+/* ==============================
+   Contacts Section
+============================== */
+
+.contacts {
+  background: var(--ink);
+  color: #fff;
+}
+
+
+/* ==============================
+   Section Description
+============================== */
+
+.contacts .lead {
+  color: #b8cfd0;
+}
+
+
+/* ==============================
+   Contacts Layout
+============================== */
+
+.contacts .wrap {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: stretch;
+  gap: 48px;
+}
+
+
+/* ==============================
+   Contact Information
+============================== */
+
+.contacts dl {
+  margin: 0 0 28px;
+}
+
+
+/* Contact Label */
+
+.contacts dt {
+  margin-top: 18px;
+
+  color: #8fb0b2;
+  font-size: 14px;
+}
+
+
+/* Contact Details */
+
+.contacts dd {
+  margin: 2px 0 0;
+
+  font-size: 18px;
+}
+
+
+/* Contact Links */
+
+.contacts dd a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/* ==============================
+   Map
+============================== */
+
+#map {
+  height: 100%;
+  min-height: 380px;
+
+  border-radius: 20px;
+
+  z-index: 0;
+}
+
+
+/* ==============================
+   Map Pin
+============================== */
+
+.pin {
+  width: 30px;
+  height: 30px;
+
+  border: 3px solid #fff;
+  border-radius: 50% 50% 50% 0;
+
+  background: var(--aqua);
+
+  transform: rotate(-45deg);
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ==============================
+   Responsive
+============================== */
+
+@media (max-width: 900px) {
+  .contacts .wrap {
+    grid-template-columns: 1fr;
+  }
+
+  #map {
+    min-height: 320px;
+  }
+}
